@@ -1,0 +1,17 @@
+declare -a arr=(
+    "directories"
+    "locations"
+    "utils"
+    "processes"
+    "git"
+)
+
+for file in "${arr[@]}"
+do
+    aliasfile=".bash_aliases_$file"
+    if [ -f "$aliasfile" ]; then
+        . $aliasfile
+    else
+        echo "Could not find file $aliasfile"
+    fi
+done

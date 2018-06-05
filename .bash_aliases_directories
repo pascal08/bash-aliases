@@ -1,0 +1,5 @@
+alias mkdir="mkdir -pv"
+alias rmdir="rmdir -v"
+alias ..="cd .."
+alias ...=".. && .."
+alias ....=".. && .. & .."
